@@ -1,11 +1,15 @@
 document.getElementById("submitBtn").addEventListener("click", function () {
   let isUserReady = confirm("Are you ready?");
-  console.log(isUserReady); // fixed typo
+  console.log(isUserReady);
+
+  const output = document.getElementById("output");
 
   if (isUserReady) {
     alert("User ready!");
-    document.getElementById("output").style.display = "block"; // show the message
+    output.style.display = "block";
+    output.style.animation = "rainbow 2s infinite";
   } else {
-    document.getElementById("output").style.display = "none"; // hide if not ready
+    output.style.display = "none";
+    output.style.animation = "none";
   }
 });

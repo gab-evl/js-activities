@@ -7,7 +7,7 @@ document.getElementById("submitBtn").addEventListener("click", function () {
   if (isUserReady) {
     alert("User ready!");
     output.style.display = "block";
-    output.style.animation = "rainbow 2s infinite";
+    output.style.animation = "rainbow 1.5s infinite";
   } else {
     output.style.display = "none";
     output.style.animation = "none";
